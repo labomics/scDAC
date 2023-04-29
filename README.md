@@ -3,8 +3,11 @@
  
 # Requirements
 Python --- 3.7.11
+
 Pytorch --- 1.12.0
+
 Sklearn --- 1.2.2
+
 Numpy --- 1.21.6
 
 
