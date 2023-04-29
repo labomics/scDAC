@@ -14,8 +14,11 @@ Numpy --- 1.21.6
 # Run scDAC
 Take the dataset chen_10 we provided here as an example.
 After decompressing files vec.rar in the file path of scDAC/data/chen_10/subset_0 , run the following command:
+
 CUDA_VISIBLE_DEVICES=0 py run.py --task chen_10 --exp e0
+
 To infer the labels after training, run the following command:
+
 CUDA_VISIBLE_DEVICES=0 py run.py --action infer_latent --task chen_10 --exp e0
 
 # Outputs
