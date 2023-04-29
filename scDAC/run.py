@@ -1,16 +1,16 @@
 #%%
 from os import path
-from os.path import join as pj #os.path 模块主要用于获取文件的属性。join:把目录和文件名合成一个路径
+from os.path import join as pj 
 import time
-import argparse #argparse是python用于解析命令行参数和选项的标准模块 https://www.cnblogs.com/yibeimingyue/p/13800159.html
+import argparse 
 
-from tqdm import tqdm #迭代，进度条
+from tqdm import tqdm 
 import math
 import numpy as np
 import torch as th
 import pandas as pd
 import os
-from torch import nn, autograd #autograd：提供了类和函数用来对任意标量函数进行求导
+from torch import nn, autograd
 import matplotlib.pyplot as plt
 import umap
 
@@ -121,9 +121,9 @@ def initialize():
 
 def init_seed():
     if o.seed >= 0:
-        np.random.seed(o.seed) #生成指定随机数
-        th.manual_seed(o.seed) #设置CPU生成随机数的种子，方便下次复现实验结果
-        th.cuda.manual_seed_all(o.seed)#为当前GPU设置随机种子
+        np.random.seed(o.seed) 
+        th.manual_seed(o.seed) 
+        th.cuda.manual_seed_all(o.seed)
 
 
 def init_dirs():
