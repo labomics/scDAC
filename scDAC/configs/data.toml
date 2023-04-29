@@ -1,0 +1,22 @@
+[chen_10]
+raw_data_dirs = [
+    "data/chen_10",
+]
+combs = [
+    [ ["rna"] ],
+]
+comb_ratios = [ [ 1 ] ]
+s_joint =     [ [ 0 ]]
+train_ratio = 1
+N = 512
+[chen_8]
+raw_data_dirs = [
+    "data/chen_8",
+]
+combs = [
+    [ ["rna"] ],
+]
+comb_ratios = [ [ 1 ] ]
+s_joint =     [ [ 0 ]]
+train_ratio = 1
+N = 512
