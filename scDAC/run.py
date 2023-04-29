@@ -240,16 +240,6 @@ def train():
         z = infer_latent_dp(save_input=False)
         net.loss_calculator_dp.mean_dp, net.loss_calculator_dp.weight_concentration_dp,net.loss_calculator_dp.mean_precision_dp,net.loss_calculator_dp.precisions_cholesky_dp, net.loss_calculator_dp.degrees_of_freedom_dp, net.scdp.predict_label = dp(z)
         ari, nmi, sc = cluster_index_calculer(z, net.scdp.predict_label)
-        print("ari:", ari)
-        print("nmi:", nmi)
-        print("sc:", sc)
-        epoch_id_list.append(epoch_id)
-        ari_list.append(ari)
-        nmi_list.append(nmi)
-        sc_list.append(sc)
-        plt_ari(epoch_id_list, ari_list)
-        plt_nmi(epoch_id_list, nmi_list)
-        plt_sc(epoch_id_list, sc_list)
 
         check_to_save(epoch_id)
 
@@ -293,41 +283,9 @@ def cluster_index_calculer(z_all, predict_label):
     label_plist = utils.transpose_list(predict_label_cpu)[0]
     ari = adjusted_rand_score(label_tlist, label_plist) #l1 kpca20
     nmi = normalized_mutual_info_score(label_tlist, label_plist)
-    sc = silhouette_score(z_all_cpu, label_plist)
-    
+    sc = silhouette_score(z_all_cpu, label_plist)    
     return ari, nmi, sc
 
-def plt_ari(epoch_id_list, ari_list):
-    y = ari_list
-    x = epoch_id_list
-    plt.subplots(figsize = (50, 4))
-    plt.bar(x, y, width=0.8)
-    plt.xticks(x)  # 绘制x刻度标签
-    
-    fig_dir = pj(o.result_dir, "represent", "fig")
-    utils.mkdirs(fig_dir, remove_old=False)
-    plt.savefig(pj(fig_dir, "ari.png"))
-
-def plt_nmi(epoch_id_list, nmi_list):
-    y = nmi_list
-    x = epoch_id_list
-    plt.subplots(figsize = (50, 4))
-    plt.bar(x, y, width=0.8)
-    plt.xticks(x)  # 绘制x刻度标签
-    
-    fig_dir = pj(o.result_dir, "represent", "fig")
-    plt.savefig(pj(fig_dir, "nmi.png"))
-
-
-def plt_sc(epoch_id_list, sc_list):
-    y = sc_list
-    x = epoch_id_list
-    plt.subplots(figsize = (50, 4))
-    plt.bar(x, y, width=0.8)
-    plt.xticks(x)  # 绘制x刻度标签
-    
-    fig_dir = pj(o.result_dir, "represent", "fig")
-    plt.savefig(pj(fig_dir, "sc.png"))
 
 def get_dataloaders(split, train_ratio=None):
     data_loaders = {}
