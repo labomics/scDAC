@@ -6,7 +6,7 @@ Python --- 3.7.11
 
 Pytorch --- 1.12.0
 
-Sklearn --- 1.0.2Cancel changes
+Sklearn --- 1.0.2
 
 Numpy --- 1.21.6
 
