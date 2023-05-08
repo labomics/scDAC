@@ -263,7 +263,7 @@ def dp_infer(z):
     # z_np = (z).cpu().detach().numpy()   
     z_np = z.cpu().detach().numpy()   
     bgm = BayesianGaussianMixture(
-        n_components=50, weight_concentration_prior=1e-10,mean_precision_prior = 10, covariance_type='diag', n_init = 10, init_params ='kmeans', max_iter=1000, warm_start = True
+        n_components=50, weight_concentration_prior=1e-10,mean_precision_prior = 80, covariance_type='diag', n_init = 10, init_params ='kmeans', max_iter=1000, warm_start = True
         ).fit(z_np)
     predict_label_array = bgm.predict(z_np)
     predict_label = th.Tensor(np.array(predict_label_array)).unsqueeze(1).cuda()
