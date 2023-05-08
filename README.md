@@ -16,7 +16,7 @@ Numpy --- 1.21.6
 
 Take the dataset chen_10 we provided here as an example.
 
-Split the expression matrix for the input by running the scDAC/preprocess/preprocess_split.ipynb and obtain the files of cell names and feature names by running scDAC/preprocess/preprocess_cell_and_feature_names.ipynb
+Decompress the expression matrix file in scDAC/data/mat and split it for the input by running the scDAC/preprocess/preprocess_split.ipynb and obtain the files of cell names and feature names by running scDAC/preprocess/preprocess_cell_and_feature_names.ipynb
 
 After  running the preprocess_split or decompressing files vec.rar in the file path of scDAC/data/chen_10/subset_0 , run the following command to train the scDAC model:
 
