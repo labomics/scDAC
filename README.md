@@ -37,7 +37,7 @@ The results of scDAC in the paper can be reproduced by using the code in the fil
 
 The datasets used in the paper can be found in. The information and accession ID are as the following:
 
- ![image](https://github.com/omicshub/scDAC/blob/main/scDAC/image/fig1.png](https://github.com/omicshub/scDAC/blob/main/scDAC/image/datasets.png)
+ ![image](https://github.com/omicshub/scDAC/blob/main/scDAC/image/datasets.png)
 
 If you want to use scDAC to analyse other data, you can running the code as the following:
 
