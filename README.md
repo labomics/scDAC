@@ -35,9 +35,7 @@ You can obtain the predicted clustering labels under the folder /data/chen_10, a
 
 The results of scDAC in the paper can be reproduced by using the code in the file "scDAC/demo". The code of compared methods can be found in the file "scDAC/compared methods".
 
-The datasets used in the paper can be found in. The information and accession ID are as the following:
-
- ![image](https://github.com/omicshub/scDAC/blob/main/scDAC/image/datasets.png)
+The datasets used in the paper can be found in *** or download the original data and preprocess it as the following paragraphs. The accession IDs are provided in the paper.
 
 If you want to use scDAC to analyse other data, you can running the code as the following:
 
