@@ -1,0 +1,112 @@
+[chen_10]
+raw_data_dirs = [
+    "data/chen_10",
+]
+combs = [
+    [ ["rna"] ],
+]
+comb_ratios = [ [ 1 ] ]
+s_joint =     [ [ 0 ]]
+train_ratio = 1
+N = 512
+[chen_8]
+raw_data_dirs = [
+    "data/chen_8",
+]
+combs = [
+    [ ["rna"] ],
+]
+comb_ratios = [ [ 1 ] ]
+s_joint =     [ [ 0 ]]
+train_ratio = 1
+N = 512
+
+
+[baron_single]
+raw_data_dirs1 = [
+    "data/w1",
+    "data/w2",
+    "data/w3",
+]
+raw_data_dirs = [
+    "data/b1",
+]
+combs = [
+    [ ["rna"] ],
+]
+comb_ratios = [ [ 1 ] ]
+s_joint =     [ [ 0 ]]
+train_ratio = 1
+N = 512
+
+
+
+
+[Slyper]
+raw_data_dirs1 = [
+    "data/w1",
+    "data/w2",
+    "data/w3",
+]
+raw_data_dirs = [
+    "data/s1",
+]
+combs = [
+    [ ["rna"] ],
+]
+comb_ratios = [ [ 1 ] ]
+s_joint =     [ [ 0 ]]
+train_ratio = 1
+N = 512
+
+[Zilionis]
+raw_data_dirs1 = [
+    "data/w1",
+    "data/w2",
+    "data/w3",
+]
+raw_data_dirs = [
+    "data/z1",
+]
+combs = [
+    [ ["rna"] ],
+]
+comb_ratios = [ [ 1 ] ]
+s_joint =     [ [ 0 ]]
+train_ratio = 1
+N = 512
+
+
+[Kozareva_total]
+raw_data_dirs1 = [
+    "data/w1",
+    "data/w2",
+    "data/w3",
+]
+raw_data_dirs = [
+    "data/k_t",
+]
+combs = [
+    [ ["rna"] ],
+]
+comb_ratios = [ [ 1 ] ]
+s_joint =     [ [ 0 ]]
+train_ratio = 1
+N = 512
+
+[Orozco]
+raw_data_dirs1 = [
+    "data/w1",
+    "data/w2",
+    "data/w3",
+]
+raw_data_dirs = [
+    "data/o1",
+]
+combs = [
+    [ ["rna"] ],
+]
+comb_ratios = [ [ 1 ] ]
+s_joint =     [ [ 0 ]]
+train_ratio = 1
+N = 512
