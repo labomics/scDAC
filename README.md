@@ -1,6 +1,8 @@
 scDAC
 
- scDAC is a single-cell Deep Adaptive Clustering (scDAC) model by coupling the Autoencoder (AE) and the Dirichlet Process Mixture Model (DPMM)
+ scDAC is a single-cell Deep Adaptive Clustering (scDAC) model by coupling the Autoencoder (AE) and the Dirichlet Process Mixture Model (DPMM) 
+ 
+ ![image](https://github.com/omicshub/scDAC/blob/main/scDAC/image/fig1.png)
 
 # Requirements
 
