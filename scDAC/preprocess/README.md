@@ -1,1 +1,1 @@
-
+When preprocess datasets, we can firstly use preprocess.ipynb to obtain the featurename, cellname and expression matrix. Then use preprocess_split.ipynb to split the matrix to vector, which can be used by scDAC.
