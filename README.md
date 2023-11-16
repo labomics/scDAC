@@ -30,14 +30,14 @@ To infer the labels after training, run the following command:
 
 # Outputs
 
-You can obtain the predicted clustering labels under the folder /data/chen_10, and the ARI, NMI and SC metrics. The indicator of  Deviation Ratio (DR) can be calculated by running scDAC/metrics_DR.ipynb
+You can obtain the predicted clustering labels under the folder /data/chen_10, and the ARI, NMI and SC metrics. The indicator of  Deviation Ratio (DR) can be calculated by running "scDAC/metrics_DR.ipynb".
 
 
 The results of scDAC in the paper can be reproduced by using the code in the file "scDAC/demo". The code of compared methods can be found in the file "scDAC/compared methods".
 
 The datasets used in the paper can be found in. The information and accession ID are as the following:
 
- ![image](https://github.com/omicshub/scDAC/blob/main/scDAC/image/fig1.png)
+ ![image](https://github.com/omicshub/scDAC/blob/main/scDAC/image/fig1.png](https://github.com/omicshub/scDAC/blob/main/scDAC/image/datasets.png)
 
 If you want to use scDAC to analyse other data, you can running the code as the following:
 
