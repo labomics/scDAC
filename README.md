@@ -35,7 +35,7 @@ You can obtain the predicted clustering labels under the folder /data/chen_10, a
 
 The results of scDAC in the paper can be reproduced by using the code in the file "scDAC/demo". The code of compared methods can be found in the file "scDAC/compared methods".
 
-The datasets used in the paper can be found in *** or download the original data and preprocess it as the following paragraphs. The accession IDs are provided in the paper.
+The datasets used in the paper can be found in *** , we can download and save them to the path "/data/preprocessed". When using the datasets orozco and kozareva, we can use "/preprocess/preprocess_split.ipynb" to obtain the input as the input of these two dataset are too large to upload. We can also download the original data and preprocess it as the following preprocess steps suggested in the following. The accession IDs are provided in the paper.
 
 # using for new dataset
 
