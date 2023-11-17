@@ -31,13 +31,13 @@ To infer the labels after training, run the following command:
 
 You can obtain the predicted clustering labels under the folder /data/chen_10, and the ARI, NMI and SC metrics. The indicator of  Deviation Ratio (DR) can be calculated by running "scDAC/metrics_DR.ipynb".
 
-# results reproduction
+# Results reproduction
 
 The results of scDAC in the paper can be reproduced by using the code in the file "scDAC/demo". The code of compared methods can be found in the file "scDAC/compared methods".
 
 The datasets used in the paper can be found at (https://drive.google.com/file/d/1qyaxzW7k0rA9Y08P_ZlapVb43l0xZuoE/view?usp=drive_link), we can download and unzip them to the path "/data/preprocessed". When using the datasets orozco and kozareva, we can use "/preprocess/preprocess_split.ipynb" to obtain the input as the input of these two dataset are too large to upload. We can also download the original data and preprocess it as the following preprocess steps suggested in the following. The accession IDs are provided in the paper.
 
-# using for new dataset
+# Using for new dataset
 
 If you want to use scDAC to analyse other data, you can running the code as the following:
 
