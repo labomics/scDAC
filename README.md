@@ -28,14 +28,16 @@ To infer the labels after training, run the following command:
 
     $ CUDA_VISIBLE_DEVICES=0 py run.py --action infer_latent --task chen_10 --exp e0
 
-# Outputs
 
 You can obtain the predicted clustering labels under the folder /data/chen_10, and the ARI, NMI and SC metrics. The indicator of  Deviation Ratio (DR) can be calculated by running "scDAC/metrics_DR.ipynb".
 
+# results reproduction
 
 The results of scDAC in the paper can be reproduced by using the code in the file "scDAC/demo". The code of compared methods can be found in the file "scDAC/compared methods".
 
 The datasets used in the paper can be found in *** or download the original data and preprocess it as the following paragraphs. The accession IDs are provided in the paper.
+
+# using for new dataset
 
 If you want to use scDAC to analyse other data, you can running the code as the following:
 
