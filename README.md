@@ -43,7 +43,7 @@ If you want to use scDAC to analyse other data, you can running the code as the 
 
 1.Please preprocess the data by Seurat referring to https://satijalab.org/seurat/articles/pbmc3k_tutorial, or use the code "preprocess.ipynb" provided by scDAC in the "preprocess" folder.
 
-Whether we do the preprocessing step ourselves or with the scDAC's code in the "preprocess" folder, we need to get the following files:
+Whether we do the preprocessing step ourselves or with the scDAC's code in the "preprocess" folder. The specific steps and parameter settings are as follows: UMI count matrices are normalized and log-transformed using the NormalizeData function in Seurat package (v.4.1.0). We obtain the gene expression matrix after selecting 4000 highly variable genes using the FindVariableFeatures function and scaling the selected genes using the ScaleData function. The other parameters are set to the default value suggested in Seurat. We need to get the following files:
 
 a. The expression matrices of highly variable genes.
 
@@ -56,6 +56,8 @@ We can use "preprocess_split.ipynb" in the "preprocess" folder to split the matr
 3.Please train the model:
 
      $ CUDA_VISIBLE_DEVICES=0 py run.py --task [datasetname]
+
+The parameters in scDAC include the network parameters in the AE module and the model parameters in the DPMM module. The parameter details of scDAC are as follows: in the AE module, we set the sizes of two hidden layers of encoder to 256 and 128, set the sizes of the hidden layers of decoder to 128 and 256, and set the dimensionality of the low-dimensional representation to 32; in the DPMM module, the number of components α is robust and often set to 1e-10, the other parameters are set to the default value suggested in the BayesianGaussianMixture function; in the loss function, we set the weight hyperparameter λ to 1 in all experiments. During the training process, the minibatch size is set to 512, and the AdamW optimizer with a fixed learning rate of 1e − 4 is used for optimization. 
 
 4.To infer the labels after training, run the following command:
 
